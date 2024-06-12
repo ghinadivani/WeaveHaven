@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // upload foto
     if (isset($_FILES['img']) && $_FILES['img']['error'] === UPLOAD_ERR_OK) {
-        $img_dir = 'C:/xampp/htdocs/ArtGallery/images/';
+        $img_dir = 'C:/xampp/htdocs/weavehaven/images/';
         $img_filename = uniqid('piece_') . '.jpg';
         $img_path = $img_dir . $img_filename;
 

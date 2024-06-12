@@ -42,7 +42,7 @@
 <div>
 <header>
     <section class="header">
-        <a href="home.php" class="logo">ECRU GALLERY</a>
+        <a href="home.php" class="logo">WeaveHaven</a>
         <nav class="navbar">
             <a href="manage_orders.php">Manage Orders</a>
             <a href="manage_pieces.php">Manage Pieces</a>

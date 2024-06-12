@@ -11,7 +11,7 @@
     <main>
 
 <section class="header">
-    <a href="home.php" class="logo">ECRU GALLERY</a>
+    <a href="home.php" class="logo">Weave Haven</a>
 
     <nav class="navbar">
         <a href="home.php">home</a>
