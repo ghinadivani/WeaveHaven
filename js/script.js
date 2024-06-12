@@ -41,7 +41,7 @@ var swiper = new Swiper(".reviews-slider", {
 
 document.getElementById('exp_date').addEventListener('input', function(event) {
   const inputValue = event.target.value;
-  const formattedValue = inputValue.replace(/\D/g, ''); // Remove non-numeric characters
+  const formattedValue = inputValue.replace(/\D/g, ''); // hapus yg non-numeric karakter
   
   if (formattedValue.length > 2) {
       event.target.value = `${formattedValue.slice(0, 2)}/${formattedValue.slice(2, 6)}`;

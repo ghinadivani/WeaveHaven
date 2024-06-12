@@ -64,7 +64,8 @@
     </div>
 </section>
 
-<section>
+
+<section> <!-- bagian anggota kelompok -->
   <div class="container" style="background-color: #c3b091; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
     <div class="heading-title" style="text-align: center; margin-bottom: 20px;">
       <h2 style="font-size: 24px; font-weight: bold; color: #333;">Meet Our Team</h2>

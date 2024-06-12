@@ -32,28 +32,25 @@
 </div>
 
 <?php
-// Database connection parameters
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
 $database = "shoppingcart"; 
 
 try {
-    // Buat instance PDO baru
     $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
-    // Set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $sql = "SELECT id, name, description, price, img, estimated FROM pieces";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
-    // Memeriksa apakah ada rows yang dikembalikan
     if ($stmt->rowCount() > 0) {
-        // Output data of each row
+
+        // Output data tiap baris
         echo '<div class="gallery">';
         while ($row = $stmt->fetch()) {
-            // Display each row's data
+
             echo '<div class="pieces">';
             echo '<td><img src="/images/' . $row["img"] . '" alt="' . $row["name"] . '" style="width:100%; height: auto;"></td>';       
             echo '<p class="gallery-name" style="font-size: 13px;">' . $row["name"] . '</p>';
@@ -67,9 +64,6 @@ try {
     } else {
         echo "0 results";
     }
-} catch (PDOException $e) {
-    // Menampilkan pesan error jika koneksi gagal
-    echo "Connection failed: " . $e->getMessage();
 }
 
 ?>

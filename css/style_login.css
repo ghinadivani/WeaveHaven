@@ -19,7 +19,7 @@ form {
 	padding: 20px;
 	background: rgba(255, 254, 254, 0.6);
 	border-radius: 15px;
-	outline: 5px solid #000000; /* Added outline property */
+	outline: 5px solid #000000; 
 }
 
 h2 {
